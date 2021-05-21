@@ -35,7 +35,7 @@ L.control.layers(baseMaps).addTo(map);
 light.addTo(map);
 
 // Accessing the airport GeoJSON URL
-let torontoData = "";
+let torontoData = "https://raw.githubusercontent.com/Dakota-Dusold/Mapping_Earthquakes/main/torontoRoutes.json";
 
 // Create a style for the lines.
 let myStyle = {
