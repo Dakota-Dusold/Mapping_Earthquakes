@@ -31,17 +31,8 @@ let map = L.map('mapid', {
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
-// Then we add our 'streets' tile layer to the map.
-light.addTo(map);
-
 // Accessing the airport GeoJSON URL
 let torontoData = "https://raw.githubusercontent.com/Dakota-Dusold/Mapping_Earthquakes/main/torontoRoutes.json";
-
-// Create a style for the lines.
-let myStyle = {
-	color: "#aaa1ff", 
-	weight: 2
-}
 
 // Grabbing our GeoJSON data.
 d3.json(torontoData).then(function(data) {
